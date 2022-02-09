@@ -31,6 +31,7 @@ apt-get install live-build live-manual live-tools
 clone this git and navigate to it with your favorite terminal emulator/SSH/everything you want when theres' a blinking cursor
 
 copy basic scripts:
+
 cp /usr/share/doc/live-build/examples/auto/build auto/build
 cp /usr/share/doc/live-build/examples/auto/clean auto/clean
 
