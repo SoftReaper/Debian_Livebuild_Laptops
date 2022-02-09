@@ -1,0 +1,29 @@
+#!/bin/sh
+
+set -e
+
+lb config noauto \
+    --architectures	                    "amd64" \
+    --distribution 	                    "bullseye" \
+    --linux-packages	                "linux-image-5.16.0 linux-headers-5.16.0" \
+    --firmware-binary                   false \
+    --firmware-chroot                   false \
+    --bootappend-live 	                "boot=live" \
+    --bootappend-install                "nouveau.modeset=0" \
+    --archive-areas 	                "main contrib non-free" \
+    --memtest                           "memtest86+" \
+    --bootloaders                       "grub-efi" \
+    --chroot-squashfs-compression-type  "zstd" \
+    --debian-installer 	                "live" \
+    --security                          true  \
+    --updates                           true  \
+    --backports                         true  \
+    --debian-installer-gui              true  \
+    --win32-loader	                    false \
+	--binary-images                     'iso-hybrid' \
+	--iso-volume                        'Debian_For_GA401' \
+	--iso-application                   'Debian for GA401' \
+	--iso-preparer                      'SoftReaper' \
+	--iso-publisher                     'SoftReaper@gmail.com' \
+    --verbose
+    "${@}"

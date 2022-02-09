@@ -1,0 +1,16 @@
+#!/bin/sh
+
+set -e
+
+#Cleanup packages
+apt autoremove -y
+apt clean
+#remove conflicting live configs 
+#(will set nvidia proprietary driver, even without screen attached)
+rm /lib/live/config/1140-xserver-xorg
+rm /usr/share/live/config/xserver-xorg/*
+#sets custom mate layout
+dconf update
+#update hardware database finalize the activation of mute-mic kkey
+systemd-hwdb update
+udevadm trigger

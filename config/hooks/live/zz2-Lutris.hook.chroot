@@ -1,0 +1,8 @@
+#!/bin/sh
+
+set -e
+
+#Install Lutris
+apt update
+apt install lutris libglx-mesa0:i386 mesa-vulkan-drivers:i386 libgl1-mesa-dri:i386 --install-recommends -y
+

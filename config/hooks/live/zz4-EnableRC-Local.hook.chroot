@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -e
+
+#Enable rc.local file from 
+#includes.chroot_before_packages/etc/systemd/system/rc-local.service
+systemctl enable rc-local
