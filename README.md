@@ -33,6 +33,7 @@ clone this git and navigate to it with your favorite terminal emulator/SSH/every
 copy basic scripts:
 
 cp /usr/share/doc/live-build/examples/auto/build auto/build
+
 cp /usr/share/doc/live-build/examples/auto/clean auto/clean
 
 load config file:
