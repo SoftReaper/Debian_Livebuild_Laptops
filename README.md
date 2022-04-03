@@ -1,4 +1,4 @@
-# DebianLiveBuildCfg_GA401
+# Debian_Livebuild_Laptops Asus Zephyrus G14 (GA401I)
 
 Before anything, a big thanks to the r/ZephyrusG14 and r/Debian reddit communities 
 for their help, tips, encouragements and even cautions when needed while elaborating this set of tools.
@@ -15,7 +15,7 @@ Hooks have been commented as much as possible to ease read and modifications.
 Some others (which require software agreements, like steam) can be found in my gists
 
 The kernel used by this script can be found here:
-https://github.com/SoftReaper/linux-image-5.16-znver2
+https://github.com/SoftReaper/linux-image-customized/tree/GA401I
 (build it or get the binary version if you trust me enought, but i suggest to read a bit anyway)
 
 the provided asusctl package has been compiled from this code source:
