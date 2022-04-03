@@ -1,7 +1,0 @@
-#!/bin/sh
-
-set -e
-
-#Install Nvidia driver 470.xx and Libs
-# -t bullseye-backports required for kernel 5.15 and upper
-apt install -t bullseye-backports nvidia-driver -y
